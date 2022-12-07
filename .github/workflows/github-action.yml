@@ -41,14 +41,14 @@ jobs:
       - name: Tagging Image udagram-reverseproxy
         run: docker tag udagram-reverseproxy alan317/udagram-reverseproxy:lastest
 
-      - name: Push Docker Image
+      - name: Push Docker Image udagram-api-feed
         run: docker push alan317/udagram-api-feed:lastest
 
-      - name: Push Docker Image
+      - name: Push Docker Image udagram-api-user
         run: docker push alan317/udagram-api-user:lastest
 
-      - name: Push Docker Image
+      - name: Push Docker Image udagram-frontend
         run: docker push alan317/udagram-frontend:lastest
 
-      - name: Push Docker Image
+      - name: Push Docker Image udagram-reverseproxy
         run: docker push alan317/udagram-reverseproxy:lastest
