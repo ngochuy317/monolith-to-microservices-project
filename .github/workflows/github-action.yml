@@ -21,7 +21,7 @@ jobs:
       - name: Build Docker Image
         
         run: |
-          cd GITHUB_WORKSPACE\
+          cd ${GITHUB_WORKSPACE}\
           & docker-compose -f docker-compose-build.yml build
 
       - name: Push Docker Image
