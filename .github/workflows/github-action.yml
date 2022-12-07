@@ -14,9 +14,11 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
+      
+      - name: Log credential
+        run: echo "username $USERNAME password $PASSWORD"
 
       - name: Login Docker Hub
-        run: echo "username $USERNAME password $PASSWORD"
         uses: docker/login-action@v1
         with:
           username: $USERNAME
