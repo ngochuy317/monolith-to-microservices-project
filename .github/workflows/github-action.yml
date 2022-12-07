@@ -18,6 +18,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker Image
+        run: echo "${GITHUB_WORKSPACE}"
         working-directory: ..
         run: docker-compose -f docker-compose-build.yml build
 
