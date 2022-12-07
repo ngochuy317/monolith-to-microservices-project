@@ -17,12 +17,20 @@ jobs:
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - run: pwd
-      - run: ls -l
-      - run: chmod +x ./docker-compose-build.yml
-      - name: Build Docker Image
-        
-        run: docker-compose -f docker-compose-build.yml build
+      # - run: pwd
+      # - run: ls -l
+      # - run: chmod +x ./docker-compose-build.yml
+      - name: Build Docker Image udagram-api-feed
+        run: docker build -t udagram-api-feed ./udagram-api-feed
+
+      - name: Build Docker Image udagram-api-user
+        run: docker build -t udagram-api-user ./udagram-api-user
+
+      - name: Build Docker Image udagram-frontend
+        run: docker build -t udagram-frontend ./udagram-frontend
+
+      - name: Build Docker Image udagram-reverseproxy
+        run: docker build -t udagram-reverseproxy ./udagram-reverseproxy
 
       - name: Push Docker Image
         run: docker-compose -f docker-compose-build.yml push
