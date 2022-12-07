@@ -19,7 +19,7 @@ jobs:
 
       - run: pwd
       - run: ls -l
-      - run: chmod +x docker-compose-build.yml
+      - run: chmod +x ./docker-compose-build.yml
       - name: Build Docker Image
         
         run: docker-compose -f docker-compose-build.yml build
