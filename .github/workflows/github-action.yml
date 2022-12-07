@@ -19,9 +19,8 @@ jobs:
 
       - run: pwd
       - name: Build Docker Image
-        working-directory: ..
+        
         run: docker-compose -f docker-compose-build.yml build
 
       - name: Push Docker Image
-        working-directory: ..
         run: docker-compose -f docker-compose-build.yml push
