@@ -4,9 +4,9 @@ data:
   AWS_BUCKET: pempem-bucket
   AWS_PROFILE: default
   AWS_REGION: us-east-1
-  JWT_SECRET: default
-  POSTGRES_DB: default
-  POSTGRES_HOST: pempem-postgres.c6ujstjq58zd.us-east-1.rds.amazonaws.com
+  JWT_SECRET: testing
+  POSTGRES_DB: postgres
+  POSTGRES_HOST: postgres.c6ujstjq58zd.us-east-1.rds.amazonaws.com
   URL: default
 metadata:
   name: env-config
