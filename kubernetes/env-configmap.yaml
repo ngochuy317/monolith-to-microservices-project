@@ -7,6 +7,8 @@ data:
   JWT_SECRET: testing
   POSTGRES_DB: postgres
   POSTGRES_HOST: postgres.c6ujstjq58zd.us-east-1.rds.amazonaws.com
+  POSTGRES_USERNAME: postgres
+  POSTGRES_PASSWORD: postgres
   URL: default
 metadata:
   name: env-config
